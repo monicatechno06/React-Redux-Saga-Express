@@ -9,6 +9,7 @@ class Order extends Component {
   render() {
     return (
       <div>
+        <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/cicd.gif" alt="" />
         <OrderOutput value={this.props.total} />
         <OrderItem label="Add One Pizza" clicked={this.props.onAddItem} />
         <OrderItem label="Subtract One Pizza" clicked={this.props.onSubtractItem} />
@@ -20,6 +21,7 @@ class Order extends Component {
             <li key={strResult.id}>{strResult.value}</li>
           ))}
         </ul>
+        <OrderOutput value={this.props.total} />
       </div>
     );
   }
